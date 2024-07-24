@@ -12,6 +12,10 @@ It is a Vue component supported by PDF provided by Mozilla pdf, developed in the
 npm install pdf-masterv
 ```
 
+## 演示
+
+https://herohql521.github.io/pdf-master/dist/index.html
+
 ## use
 
 main.js

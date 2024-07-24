@@ -11,7 +11,7 @@
       <div class="item" v-for="(item,index) in outline" :key="index" @click="goPage(item.pageNumber)">{{item.title}}</div>
     </div>
     <div class="con">
-        <pdfComponent ref="pdf" url='/tsl.pdf' scale="1" :textMode="1" :singlePage="false" @loaded="loadedHandle" @pageChange="pageChange" @getOutLine="getOutLine"></pdfComponent>
+        <pdfComponent ref="pdf" url='../public/tsl.pdf' scale="1" :textMode="1" :singlePage="false" @loaded="loadedHandle" @pageChange="pageChange" @getOutLine="getOutLine"></pdfComponent>
     </div>
  
   </div>
