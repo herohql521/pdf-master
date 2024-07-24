@@ -10,6 +10,7 @@ module.exports = defineConfig({
       // 输出文件名
       filename: 'index.html'
     }
-  }
+  },
+  publicPath: '/dist/',
  
 })
