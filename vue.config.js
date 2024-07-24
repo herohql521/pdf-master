@@ -11,6 +11,6 @@ module.exports = defineConfig({
       filename: 'index.html'
     }
   },
-  publicPath: '/dist/',
+  publicPath: '/pdf-master/dist/',
  
 })
