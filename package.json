@@ -1,15 +1,21 @@
 {
-  "name": "pdf-vue",
-  "version": "0.1.0",
-  "private": true,
+  "name": "pdf-masterv",
+  "version": "0.1.1",
+  "private": false,
+  "license":"MIT",
+  "description":"pdf for vue",
+  "main":"lib/pdf-masterv.umd.min.js",
+
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name pdf-masterv --dest lib packages/pdfComponent/index.js"
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "vue": "^2.6.14",
+    "pdfjs-dist": "3.6.172"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
