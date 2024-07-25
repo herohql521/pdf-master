@@ -1,36 +1,56 @@
-
-
 ## pdf-masterv.js
 
-It is a Vue component supported by PDF provided by Mozilla pdf, developed in the language Vue2, which avoids the deprecation syntax of Vue3 and is therefore suitable for Vue3.
+由Mozilla PDF提供的核心功能支持的Vue组件，使用Vue2语言开发。
 
+## 演示
 
+[DEMO](https://herohql521.github.io/pdf-master/dist/index.html)
 
-## Getting the Code
+## 功能
+
+* 支持PDF全部文档加载
+* 支持PDF单页加载，通过页码翻页
+* 支持适配容器大小和自定义缩放
+* 支持只读模式（无法复制）
+* 支持文档搜索功能
+* 支持关键词全部高亮
+* 支持指定页码跳转及页码变换监听
+* 支持文档加载完成监听
+* 支持目录提取
+
+## 安装
 
 ```
 npm install pdf-masterv
 ```
 
-## 演示
 
-https://herohql521.github.io/pdf-master/dist/index.html
+## 使用
 
-## use
-
-main.js
+全局注册
 
 ```js
+//main.js 
 import pdfMasterv from 'pdf-masterv'
 import 'pdf-masterv/lib/pdf-masterv.css'
 Vue.use(pdfMasterv)
 ```
 
+局部注册
+```js
+import pdfComponent from 'pdf-masterv'
+import 'pdf-masterv/lib/pdf-masterv.css'
+export default {
+  components:{pdfComponent}
+}
+```
+
+
 ```html
   <pdfComponent ref="pdf" url='http://xxx/test.pdf' scale="1" :textMode="1" :singlePage="false"></pdfComponent>
 ```
 
-
+## 文档
 
 ### Attributes
 
@@ -52,3 +72,16 @@ Vue.use(pdfMasterv)
 | pdfFindAll   | 实例方法，高亮所有查找的短语                                 | keyword                             |
 | getOutLine   | 实例方法，获取pdf目录，返回outline  {title:'章节名称'，pageNumber:'所在pdf中的页码'} | Function(outline))                  |
 | pageGo       | 实例方法，跳转指定页码。this.$refs.pdf.pageGo(num)           | number                              |
+
+## 打赏支持
+
+如果项目帮到了你可以请作者喝杯咖啡
+
+​	<img src="https://herohql521.github.io/blog2022/assets/img/1.b5935985.jpg" style="zoom:20%;" />
+
+#### 打赏50及以上可向作者索要源码（仅限自己项目使用，不能复制开源）
+
+打赏的朋友欢迎添加微信，交流遇到的问题。
+
+<img src="https://herohql521.github.io/blog2022/assets/img/2.d66f2c72.jpg" style="zoom:20%;" />
+
