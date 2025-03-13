@@ -11,7 +11,7 @@
       <div class="item" v-for="(item,index) in outline" :key="index" @click="goPage(item.pageNumber)">{{item.title}}</div>
     </div>
     <div class="con">
-        <pdfComponent ref="pdf" url='./tsl.pdf' scale="1" :textMode="1" :singlePage="false" @loaded="loadedHandle" @pageChange="pageChange" @getOutLine="getOutLine"></pdfComponent>
+        <pdfComponent ref="pdf"  url="./zhushi.pdf" :bufferData="bufferData" scale="1" :textMode="1" :singlePage="true" @loaded="loadedHandle" @pageChange="pageChange" @getOutLine="getOutLine"></pdfComponent>
     </div>
  
   </div>
@@ -29,11 +29,24 @@ export default {
       key:'保护',
       outline:[],
       numPages:'',
-      curNumber:1
+      curNumber:1,
+      bufferData:new ArrayBuffer(1024)
     }
   },
   mounted() {
+    // const that = this
+    // var xhr = new XMLHttpRequest();
+    // xhr.open('GET', 'https://herohql521.github.io/pdf-master/dist/tsl.pdf', true);
+    // xhr.responseType = 'arraybuffer';
 
+    // xhr.onload = function() {
+    //   if (xhr.status === 200) {
+    //     var arrayBuffer = xhr.response;
+    //     that.bufferData = arrayBuffer
+    //     console.log(that.bufferData)
+    //   } 
+    // };
+    // xhr.send();
   },
   methods:{
     loadedHandle(state){

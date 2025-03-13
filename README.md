@@ -73,15 +73,6 @@ export default {
 | getOutLine   | 实例方法，获取pdf目录，返回outline  {title:'章节名称'，pageNumber:'所在pdf中的页码'} | Function(outline))                  |
 | pageGo       | 实例方法，跳转指定页码。this.$refs.pdf.pageGo(num)           | number                              |
 
-## 打赏支持
+## 联系作者
 
-如果项目帮到了你可以请作者喝杯咖啡
-
-​	![img](https://herohql521.github.io/blog2022/assets/img/1.f2445af8.jpg)
-
-#### 打赏50及以上可向作者索要源码（仅限自己项目使用，不能开源）
-
-打赏的朋友欢迎添加微信，交流遇到的问题。
-
-​	![img](https://herohql521.github.io/blog2022/assets/img/2.421c4869.jpg)
-
+## <img src="https://herohql521.github.io/blog2022/assets/img/2.421c4869.jpg" alt="img" style="zoom:50%;" />
