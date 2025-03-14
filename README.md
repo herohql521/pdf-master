@@ -4,7 +4,7 @@
 
 ## 演示
 
-[DEMO](https://herohql521.github.io/pdf-master/dist/index.html)
+[DEMO](https://herohql.github.io/pdf-master/dist/index.html)
 
 ## 功能
 
