@@ -75,4 +75,4 @@ export default {
 
 ## 联系作者
 
-## <img src="https://herohql521.github.io/blog2022/assets/img/2.421c4869.jpg" alt="img" style="zoom:50%;" />
+## <img src="https://herohql.github.io/blog2022/assets/img/2.421c4869.jpg" alt="img" style="zoom:50%;" />
